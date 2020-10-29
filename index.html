@@ -1,0 +1,102 @@
+<!-- Make the page
+Hard code the info
+Add the names and titles
+no colors nothing fancy just get it UP.
+THERE. -->
+<!-- get weather data for any city in postman -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"><!-- connect to css -->
+    <link rel="script" href="./script.js"><!-- connect to javascript -->
+</head>
+<body>
+
+<div class="container margin-10px">
+
+    <div class="col-md-2 text-center">
+        <!-- main container on the left -->
+        <div class="row">
+            <strong>Search for a City:</strong>
+            <!-- row 1: searchbar -->
+            <div class="search-container row">
+                <input type="text" placeholder="Search..." name="search">
+                <button>search</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+                <button>City1</button>
+            </div>
+            <div class="row">
+                <button>City2</button>
+            </div>
+            <div class="row">
+                <button>City3</button>
+            </div>
+            <div class="row">
+                <button>City4</button>
+            </div>
+            <!-- row 2: previously searched cities -->
+        </div>
+    </div>
+
+    <div class="clearfix col-md-10">
+        
+        <!-- main container on the right -->
+        <div class="city row">
+        <p>City name (Today's Date) -weather icon-</p> <br>
+        <p>Temperature: </p>
+        <p>Humidity: </p>
+        <p>Wind Speed: </p>
+        <p>UV Index: </p>
+
+            <!-- row 1: display window of info -->
+        </div>
+        <div class="forecast row">
+            <div class="row text-center">
+                5-Day Forecast
+            </div>
+            <!-- row 2: 5-day forecast -->
+            <div class="col card">
+                <p>01/01/2020</p>
+                <p>img</p>
+                <p>Temp: </p>
+                <p>Humidity: </p>
+            </div>
+            <div class="col card">
+                Day2
+                <!-- row 1: title -->
+            </div>
+            <div class="col card">
+                Day3
+                <!-- row 1: title -->
+            </div>
+            <div class="col card">
+                Day3
+                <!-- row 1: title -->
+            </div>
+            <div class="col card">
+                Day4
+                <!-- row 1: title -->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

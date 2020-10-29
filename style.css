@@ -1,0 +1,30 @@
+.search-container {
+    float: left;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 3px;
+}
+.col-md-2 {
+    border: 2px solid purple;
+}
+.city {
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.forecast {
+    border: 2px solid green;
+    padding: 20px;
+}
+
+.card {
+    border: 2px solid blue;
+    float: left;
+    width: 20%;
+}
