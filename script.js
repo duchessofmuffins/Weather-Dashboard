@@ -39,20 +39,32 @@ function getCityData (cities) {
         method: 'GET'
     }).then(function(res) {
         console.log('City Data response:', res)
-        drawPage(res) 
+        drawMainPage(res) 
     });
 
+    // added function??
     // $.ajax({
-    //     url: `http://api.openweathermap.org/data/2.5/forecast?q=${cities[0]}&appid=6ffc67dddc70d26fc73f570b3ef769b0&units=imperial`,
+    //     url: `hereiswheretheURLwillgoforthecall`
     //     method: 'GET'
     // }).then(function(res) {
-    //     console.log('Forecast response:', res)
-    //     drawPage(res) 
-    // })
-
+    //     console.log('Five Day Forecast response:', res)
+    //     drawForecast(res)
+    // });
 }
 
-function drawPage(res) {
+// separate function??
+// function getFiveDayData (fiveDays) {
+
+//     $.ajax({
+//         url: `hereiswheretheURLwillgoforthecall`
+//         method: 'GET'
+//     }).then(function(res) {
+//         console.log('Five Day Forecast response:', res)
+//         drawForecast(res)
+//     });
+// }
+
+function drawMainPage(res) {
 
     let primaryWeatherBlock = '<div class="city row">'
 
@@ -68,13 +80,18 @@ function drawPage(res) {
 
     primaryWeatherTarget.html(primaryWeatherBlock);
 
-    // let forecastWeatherBlock = '<div id="Day1">'
-
-    // forecastWeatherBlock+= `<p>Date: ${res.list[0].dt_txt}</p>`
-    // forecastWeatherBlock+= `<p>Temp: </p>`
-    // forecastWeatherBlock+= `<p>Humidity: </p>`
-
 }
+
+// separate draw page??
+// function drawForecast(res) {
+
+//     let forecastWeatherBlock = '<div class="forecast row">'
+
+//     forecastWeatherBlock+= `name`
+//     forecastWeatherBlock+= `temp`
+//     forecastWeatherBlock+= `humidity`
+//     forecastWeatherBlock+= `precipitation`
+// }
 
 $(document).ready(function() {
 // when the document has loaded, perform the following function...
